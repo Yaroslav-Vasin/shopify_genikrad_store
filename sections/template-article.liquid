@@ -4,6 +4,7 @@
       {% when 'title' %}
         <div class="flex items-center justify-center">
           <div class="w-1/2">
+            <a class="text-base uppercase text-gray-500 hover:text-gray-900 font-bold" href="{{ blog.url }}">{{ blog.title }}</a>
             <h1 class="text-4xl md:text-6xl text-center text-white font-medium">{{ article.title }}</h1>
           </div>
         </div>
@@ -16,7 +17,7 @@
           <time>{{ article.published_at | date: "%Y-%m-%d" }}</time>
         {% endif %}
       {% when 'featured_image' %}
-        <img src="{{ article.image | img_url: 'large' }}" alt="{{ article.image.alt }}">
+        <img height="auto" width="auto" loading="lazy" src="{{ article.image | img_url: 'large' }}" alt="{{ article.image.alt }}">
       {% when 'article_content' %}
         <div>{{ article.content }}</div>
       {% else %}
