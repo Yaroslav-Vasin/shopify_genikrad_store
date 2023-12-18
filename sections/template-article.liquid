@@ -66,7 +66,9 @@
       <div class="flex-1 mx-auto items-center justify-center max-w-4xl px-4">
         {% if form.errors %}
           <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
-            {% render 'icon-failed' %}
+            <div class="text-red-500">
+              {% render 'icon-failed' %}
+            </div>
             <strong class="font-bold">Oops!</strong>
             <span class="block sm:inline">Something went wrong with your submission.</span>
             <ul class="mt-3 list-disc list-inside text-sm text-red-600">
