@@ -693,6 +693,10 @@ video {
   height: 100%;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -996,6 +1000,11 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-3 {

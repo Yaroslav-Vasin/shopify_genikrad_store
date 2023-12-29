@@ -37,27 +37,25 @@
   {% endpaginate %}
 </div>
 
-
-
 {% schema %}
-  {
-    "name": "Blog",
-    "settings": [
-      {
-        "type": "range",
-        "id": "number_of_blog_psts",
-        "label": "Number of posts",
-        "min": 1,
-        "max": 6,
-        "step": 1,
-        "default": 3
-      },
-      {
-        "type": "text",
-        "id": "blog_read_more",
-        "label": "Read more label",
-        "default": "Read more"
-      }
-    ]
-  }
+{
+  "name": "Blog",
+  "settings": [
+    {
+      "type": "range",
+      "id": "number_of_blog_psts",
+      "label": "Number of posts",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "text",
+      "id": "blog_read_more",
+      "label": "Read more label",
+      "default": "Read more"
+    }
+  ]
+}
 {% endschema %}
