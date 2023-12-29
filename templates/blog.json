@@ -1,8 +1,13 @@
 {
   "sections": {
     "template": {
-      "type": "template-blog"
+      "type": "template-blog",
+      "settings": {
+        "number_of_blog_psts": 1
+      }
     }
   },
-  "order": ["template"]
+  "order": [
+    "template"
+  ]
 }
