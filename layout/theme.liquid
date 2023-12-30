@@ -11,8 +11,8 @@
     <!-- Header hook for plugins -->
     {{ 'application.liquid.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'application.js' | asset_url }}" defer></script>
-
-    {% comment %} <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> {% endcomment %}
+    
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     {% section 'header' %}
